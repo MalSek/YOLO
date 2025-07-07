@@ -190,5 +190,5 @@ pip install albumentations opencv-python ultralytics
 | Recall        | 0.966    |
 
 
-Все файлы, которые также должны быть в папке project, но появились проблемы с загрузкой из-за их веса находятся по ссылке - 
+Все файлы, которые также должны быть в папке project, но появились проблемы с загрузкой из-за их веса находятся по ссылке - https://drive.google.com/drive/folders/1faVWwDwNa60raa3Xem90_t5XwSxGwwgK?usp=sharing
 [Document.pdf](https://github.com/user-attachments/files/21094541/Document.pdf)
