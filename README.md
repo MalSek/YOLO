@@ -192,3 +192,4 @@ pip install albumentations opencv-python ultralytics
 
 Все файлы, которые также должны быть в папке project, но появились проблемы с загрузкой из-за их веса находятся по ссылке - https://drive.google.com/drive/folders/1faVWwDwNa60raa3Xem90_t5XwSxGwwgK?usp=sharing
 [Document.pdf](https://github.com/user-attachments/files/21094541/Document.pdf)
+[Document (1).pdf](https://github.com/user-attachments/files/21094805/Document.1.pdf)
