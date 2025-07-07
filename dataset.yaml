@@ -1,0 +1,13 @@
+path: E:/Project/dataset
+train: images/train
+val: images/val
+test: images/test
+
+nc: 5
+
+names:
+  0: Лепешки
+  1: Мясо
+  2: Салат
+  3: Суп
+  4: Чай
