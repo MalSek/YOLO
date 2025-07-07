@@ -1,0 +1,68 @@
+<View>
+  <!-- Настройки интерфейса -->
+  <Header value="Обведите блюдо и выберите тип"/>
+  <Image name="image" value="$image" zoom="true" rotateControl="true"/>
+
+  <!-- Основные классы с горячими клавишами -->
+  <RectangleLabels name="dish" toName="image">
+    <!-- Горячие напитки -->
+    <Label value="Чай" background="#D4A76A" hotkey="1" showInline="true">
+      <Rectangle preset="cup" width="70" height="90"/> <!-- Пресет для кружки -->
+    </Label>
+
+    <!-- Мучные изделия -->
+    <Label value="Лепешки" background="#FFD700" hotkey="2" showInline="true">
+      <Rectangle preset="flat" width="120" height="80"/> <!-- Плоская форма -->
+    </Label>
+
+    <!-- Жидкие блюда -->
+    <Label value="Суп" background="#FF4500" hotkey="3" showInline="true">
+      <Rectangle preset="bowl" width="100" height="100"/> <!-- Форма миски -->
+    </Label>
+
+    <!-- Мясные блюда -->
+    <Label value="Мясо" background="#8B0000" hotkey="4" showInline="true">
+      <Rectangle preset="irregular" width="150" height="100"/> <!-- Произвольная форма -->
+    </Label>
+
+    <!-- Овощные блюда -->
+    <Label value="Салат" background="#32CD32" hotkey="5" showInline="true">
+      <Rectangle preset="salad" width="130" height="90"/> <!-- Форма салатницы -->
+    </Label>
+  </RectangleLabels>
+
+  <!-- Дополнительные элементы -->
+  <Header value="Детали блюда (опционально)"/>
+  <KeyPointLabels name="details" toName="image">
+    <Label value="Гарнир" background="#FF6347" hotkey="6"/>
+    <Label value="Соус" background="#9370DB" hotkey="7"/>
+    <Label value="Украшение" background="#FF69B4" hotkey="8"/>
+  </KeyPointLabels>
+
+  <!-- Горячие клавиши для управления -->
+  <Header value="Управление"/>
+  <Choices name="control" toName="image" showInline="true">
+    <Choice value="Готово" hotkey="enter"/>
+    <Choice value="Пропустить" hotkey="space"/>
+  </Choices>
+
+  <!-- Стили для лучшей видимости -->
+  <Styles>
+    <Style>
+      .lsf-annotations-list {
+        max-height: 250px;
+        background: #f8f8f8;
+      }
+      .ant-tag {
+        font-size: 14px;
+        font-weight: bold;
+        padding: 5px 10px;
+        border-radius: 4px;
+      }
+      /* Цвета для пресетов */
+      [data-testid="rectangle"][fill="#D4A76A"] {
+        stroke-dasharray: 5; /* Пунктир для чая */
+      }
+    </Style>
+  </Styles>
+</View>
