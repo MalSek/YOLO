@@ -55,3 +55,6 @@ pip install albumentations opencv-python ultralytics
 | mAP50-95      | 0.636    |
 | Precision     | 0.966    |
 | Recall        | 0.966    |
+
+
+Все файлы, которые также должны быть в папке project, но появились проблемы с загрузкой из-за их веса находятся по ссылке - 
